@@ -1,0 +1,6 @@
+nsu\maxwell\Server\ClientsManager.class
+nsu\maxwell\Server\ClientHandler.class
+nsu\maxwell\Server\ClientsManager$ClientInfo.class
+nsu\maxwell\Server\Server.class
+nsu\maxwell\Server\Main.class
+nsu\maxwell\Server\SpeedHandler.class
