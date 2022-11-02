@@ -1,0 +1,120 @@
+{
+  "hits": [
+    {
+      "point": {
+        "lat": 53.4288026,
+        "lng": -6.247592522077657
+      },
+      "extent": [
+        -6.3061592,
+        53.4172429,
+        -6.2296698,
+        53.4399399
+      ],
+      "name": "Dublin Airport",
+      "country": "Ireland",
+      "countrycode": "IE",
+      "city": "Fingal",
+      "street": "Swords Road",
+      "postcode": "K67 P957",
+      "osm_id": 10150161,
+      "osm_type": "R",
+      "osm_key": "aeroway",
+      "osm_value": "aerodrome"
+    },
+    {
+      "point": {
+        "lat": -38.0415747,
+        "lng": 144.47225146948307
+      },
+      "extent": [
+        144.4459758,
+        -38.0620197,
+        144.50232,
+        -38.0159802
+      ],
+      "name": "Avalon Airport",
+      "country": "Australia",
+      "countrycode": "AU",
+      "city": "City of Greater Geelong",
+      "state": "Victoria",
+      "street": "Beach Road",
+      "postcode": "3212",
+      "osm_id": 48570499,
+      "osm_type": "W",
+      "housenumber": "80",
+      "osm_key": "aeroway",
+      "osm_value": "aerodrome",
+      "house_number": "80"
+    },
+    {
+      "point": {
+        "lat": 51.46773895,
+        "lng": -0.4587800741571181
+      },
+      "extent": [
+        -0.4943776,
+        51.4560987,
+        -0.4151697,
+        51.4794056
+      ],
+      "name": "Heathrow Airport",
+      "country": "United Kingdom",
+      "countrycode": "GB",
+      "city": "London Borough of Hillingdon",
+      "state": "England",
+      "street": "Wirra Way",
+      "postcode": "TW6 2GD",
+      "osm_id": 14001268,
+      "osm_type": "R",
+      "osm_key": "aeroway",
+      "osm_value": "aerodrome"
+    },
+    {
+      "point": {
+        "lat": -31.9406095,
+        "lng": 115.96760765137932
+      },
+      "extent": [
+        115.9500243,
+        -31.9635897,
+        115.9867131,
+        -31.9163727
+      ],
+      "name": "Perth Airport",
+      "country": "Australia",
+      "countrycode": "AU",
+      "state": "Western Australia",
+      "street": "Fauntleroy Avenue",
+      "postcode": "6105",
+      "osm_id": 179200892,
+      "osm_type": "W",
+      "osm_key": "aeroway",
+      "osm_value": "aerodrome"
+    },
+    {
+      "point": {
+        "lat": 51.1541082,
+        "lng": -0.18231164991272042
+      },
+      "extent": [
+        -0.2154936,
+        51.1436186,
+        -0.161261,
+        51.1645649
+      ],
+      "name": "London Gatwick Airport",
+      "country": "United Kingdom",
+      "countrycode": "GB",
+      "city": "Crawley",
+      "state": "England",
+      "street": "Beehive Ring Road",
+      "postcode": "RH6 0PB",
+      "osm_id": 260720166,
+      "osm_type": "W",
+      "osm_key": "aeroway",
+      "osm_value": "aerodrome"
+    }
+  ],
+  "locale": "en"
+}
