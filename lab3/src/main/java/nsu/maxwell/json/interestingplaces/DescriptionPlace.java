@@ -8,7 +8,7 @@ public record DescriptionPlace(String name, Wiki wikipedia_extracts) {
         stringBuilder.append("Name: ").append(name).append("\n");
 
         if (wikipedia_extracts == null) {
-            stringBuilder.append("No description\n");
+            stringBuilder.append("No description\n\n");
             return stringBuilder.toString();
         }
 

@@ -7,9 +7,9 @@ import nsu.maxwell.json.interestingplaces.InterestingPlace;
 import java.util.ArrayList;
 
 public class PlaceParser {
-    Gson gson = new Gson();
 
-    public ArrayList<Feature> parse(String srcJson) {
+    public static ArrayList<Feature> parse(String srcJson) {
+        Gson gson = new Gson();
         InterestingPlace places = gson.fromJson(srcJson, InterestingPlace.class);
         return places.features();
     }
