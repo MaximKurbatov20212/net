@@ -69,16 +69,17 @@ public class Main {
 
         CompletableFuture<WeatherInfo> weatherInfoCompletableFuture = client.getWeather(point);
 
-        CompletableFuture<CompletableFuture<List<DescriptionPlace>>> descriptions =
-                client.getInterestingPlaces(point).thenApply(features -> myAllOf(features.stream()
+        CompletableFuture<List<DescriptionPlace>> descriptions =
+                client.getInterestingPlaces(point).thenCompose(features -> myAllOf(features.stream()
                     .map(Feature::id)
                     .map(client::getDetailsAboutInterestingPlaces).toList()));
 
         CompletableFuture<Void> all = CompletableFuture.allOf(descriptions, weatherInfoCompletableFuture);
 
-        return all.thenApply(x -> new Information(descriptions.join().join(), weatherInfoCompletableFuture.join()));
+        return all.thenApply(x -> new Information(descriptions.join(), weatherInfoCompletableFuture.join()));
     }
 
+    // List<CompletableFuture<T>> -> CompletableFuture<List<T>>
     public static <T> CompletableFuture<List<T>> myAllOf (List<CompletableFuture<T>> futures) {
         return futures.stream()
                 .collect(collectingAndThen(toList(), l -> CompletableFuture.allOf(l.toArray(new CompletableFuture[0]))
